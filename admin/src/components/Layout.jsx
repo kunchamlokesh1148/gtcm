@@ -14,7 +14,8 @@ import {
    ChevronLeft, 
    ChevronRight,
    MessageSquare,
-   LogOut
+   LogOut,
+   Zap
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
@@ -90,7 +91,7 @@ export default function Layout({ children }) {
             </div>
             {!collapsed && (
               <span className="font-extrabold text-xs bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400 leading-snug tracking-wide uppercase">
-                FLASH-G Cutmit<br />Management Portal
+                FLASH-G<br />Management Portal
               </span>
             )}
           </Link>

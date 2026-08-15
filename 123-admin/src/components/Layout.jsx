@@ -14,7 +14,8 @@ import {
    ChevronLeft, 
    ChevronRight,
    MessageSquare,
-   LogOut
+   LogOut,
+   Zap
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
