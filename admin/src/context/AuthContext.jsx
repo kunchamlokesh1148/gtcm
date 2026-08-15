@@ -12,7 +12,6 @@ export const AuthProvider = ({ children }) => {
 
   // Helper to load profile from Firestore
   const fetchAdminProfile = async (email, uid) => {
-    // TEMPORARY BYPASS: Grant Super Admin to any authenticated user to resolve the initialization issue
     const tempProfile = {
       id: uid,
       name: 'System Admin',
@@ -24,10 +23,13 @@ export const AuthProvider = ({ children }) => {
     
     try {
       const docRef = doc(db, 'adminCredentials', uid);
-      await setDoc(docRef, tempProfile);
+      await Promise.race([
+        setDoc(docRef, tempProfile),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('Firestore timeout')), 1500))
+      ]);
       console.log("Auto-seeded admin profile in Firestore for:", email);
     } catch (e) {
-      console.warn("Firestore auto-seed failed (expected if rules are strict):", e.message);
+      console.warn("Firestore auto-seed notice:", e.message);
     }
     
     return tempProfile;

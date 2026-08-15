@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Package, 
@@ -588,4 +588,3 @@ export default function Dashboard() {
     </div>
   );
 }
-

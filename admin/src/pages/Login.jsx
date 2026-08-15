@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Lock, Mail, Eye, EyeOff, ShieldCheck, Zap } from 'lucide-react';
@@ -39,11 +39,17 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center relative overflow-hidden bg-slate-950 px-4">
+    <div 
+      className="min-h-screen w-full flex items-center justify-center relative overflow-hidden bg-slate-950 px-4 py-12"
+      style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+    >
       {/* Background gradients */}
       <div className="absolute top-0 left-0 right-0 h-96 bg-gradient-to-b from-indigo-900/15 to-transparent blur-3xl -z-10"></div>
       
-      <div className="w-full max-w-md glass-panel p-8 rounded-3xl border border-indigo-400/10 shadow-2xl relative z-10">
+      <div 
+        className="w-full max-w-md glass-panel p-8 rounded-3xl border border-indigo-400/10 shadow-2xl relative z-10"
+        style={{ width: '100%', maxWidth: '440px', backgroundColor: '#FFFFFF', borderRadius: '24px', padding: '2rem' }}
+      >
         <div className="text-center mb-8">
           <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 via-orange-500 to-yellow-400 p-0.5 shadow-xl shadow-amber-500/20 mx-auto mb-4 flex items-center justify-center">
             <div className="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
@@ -126,4 +132,3 @@ export default function Login() {
     </div>
   );
 }
-

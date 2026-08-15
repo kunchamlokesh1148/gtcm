@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Building2, Mail, Phone, MapPin, Calendar, ShoppingBag, CreditCard, BarChart4, Eye } from 'lucide-react';
 import { dbService } from '../services/db';
@@ -253,4 +253,3 @@ export default function CustomerDetails() {
     </div>
   );
 }
-
