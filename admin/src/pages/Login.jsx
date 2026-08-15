@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Lock, Mail, Eye, EyeOff, ShieldCheck, Zap } from 'lucide-react';
@@ -51,7 +51,7 @@ export default function Login() {
             </div>
           </div>
           <h2 className="text-2xl font-black text-[#B8860B] uppercase tracking-wider">
-            FLASH-G Cutmit
+            FLASH-G
           </h2>
           <p className="text-xs text-[#4B5563] mt-1 uppercase font-bold tracking-widest">
             Admin Management Portal
@@ -126,3 +126,4 @@ export default function Login() {
     </div>
   );
 }
+

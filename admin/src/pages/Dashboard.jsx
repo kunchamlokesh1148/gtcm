@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Package, 
@@ -184,7 +184,7 @@ export default function Dashboard() {
         <div className="p-4 mb-4 rounded-full bg-slate-900 text-indigo-400 border border-slate-800">
           <Package size={48} />
         </div>
-        <h2 className="text-2xl font-bold text-slate-100 mb-2">Welcome to FLASH-G Cutmit Management Portal!</h2>
+        <h2 className="text-2xl font-bold text-slate-100 mb-2">Welcome to FLASH-G Management Portal!</h2>
         <p className="text-slate-400 mb-6 max-w-md">
           Your inventory is empty. Head to the Products page to add your first product and start managing your warehouse.
         </p>
@@ -588,3 +588,4 @@ export default function Dashboard() {
     </div>
   );
 }
+

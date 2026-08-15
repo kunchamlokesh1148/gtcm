@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   ShoppingCart, 
@@ -611,7 +611,7 @@ export default function Orders() {
                               longitude={order.deliveryAddress.longitude}
                               originLat={18.1018}
                               originLng={78.8523}
-                              originTitle="FLASH-G Cutmit Store"
+                              originTitle="FLASH-G Store"
                               address={order.deliveryAddress.fullAddress}
                               title={`Delivery: ${custCompanyName || custContactName || 'Customer'}`}
                               height="200px"
@@ -904,3 +904,4 @@ export default function Orders() {
     </div>
   );
 }
+

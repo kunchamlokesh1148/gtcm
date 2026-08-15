@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Building2, Mail, Phone, MapPin, Calendar, ShoppingBag, CreditCard, BarChart4, Eye } from 'lucide-react';
 import { dbService } from '../services/db';
@@ -130,7 +130,7 @@ export default function CustomerDetails() {
                     longitude={customer.deliveryAddress && typeof customer.deliveryAddress === 'object' ? customer.deliveryAddress.longitude : null}
                     originLat={18.1018}
                     originLng={78.8523}
-                    originTitle="FLASH-G Cutmit Store"
+                    originTitle="FLASH-G Store"
                     address={customer.deliveryAddress && typeof customer.deliveryAddress === 'object' ? customer.deliveryAddress.fullAddress : (customer.address || '')}
                     title={customer.companyName || customer.shopName || customer.name || "Client Location"}
                     height="180px"
@@ -253,3 +253,4 @@ export default function CustomerDetails() {
     </div>
   );
 }
+
